@@ -149,5 +149,9 @@ $( function(){
       $("#tagID_マンガビデオ").click(function( event ){
         document.location = "https://www.youtube.com/watch?v=R6EtG7UaVgo";
       });
+
+      $("#tagID_VinoMap").click(function( event ){
+        document.location = "https://vinomap.herokuapp.com";
+      });
     }
 });
