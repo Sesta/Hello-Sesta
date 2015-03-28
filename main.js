@@ -123,6 +123,7 @@ $( function(){
 
     function draw( words ) {
       var color = d3.scale.category10();
+      var count = 0;
 
       d3.select( "svg" )
           .attr( "width", svgWidth )
@@ -134,11 +135,19 @@ $( function(){
         .enter().append( "text")
           .style( "font-size", function(d) { return d.size + "px"; } )
           .style( "fill", function(d){ return color(d.color);} )
+          .attr( "id" , function(d){
+            count++;
+            return "tagID_" + d.text;
+          })
           .attr( "text-anchor", "middle" )
           .attr( "transform", function(d) {
             return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")"; //ここで、実際の文字の角度を指定している
           })
           .text(function(d) { return d.text; });
       }
+
+      $("#tagID_マンガビデオ").click(function( event ){
+        document.location = "https://www.youtube.com/watch?v=R6EtG7UaVgo";
+      });
     }
 });
