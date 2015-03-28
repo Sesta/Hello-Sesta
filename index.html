@@ -1,0 +1,75 @@
+
+<html>
+	<head>
+		<title id="title" lang="ja">Takeda's Page</title>
+    <meta http-equiv="Content-Type" content="test/html;charset=utf-8">
+    <link rel="stylesheet/less" type="text/css" href="main.less">
+		<link href='lib/onepage-scroll.css' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="lib/less.js"></script>
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/d3.min.js"></script>
+		<script type="text/javascript"  src="lib/d3.layout.cloud.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="lib/jquery.onepage-scroll.js"></script>
+	</head>
+
+	<body>
+		<div id="contents">
+			<section class="content">
+				<div class="center">
+					<h1><span>SHUHEI TAKEDA</span></h1>
+					<div class="school">筑波大学大学院 システム情報工学研究科</div>
+					<div class="team">インタラクティブプログラミング研究室NAISチーム</div>
+					<img src="circle_takedas.png" width="200px">
+				</div>
+			</section>
+
+			<section class="content">
+				<div class="center">
+					<div class="paper1">
+						<img src="graph.png" height="250px">
+						<div>
+							<span class="title">
+								ローカルな美的基準を考慮した<br>力指向におけるレイアウト制御方式
+							</span><br>
+							武田修平, 三末和男, 田中次郎<br>
+							情報処理学会第76回大会, 2014年3月
+						</div>
+					</div>
+
+					<div class="line"></div>
+
+					<div class="paper2">
+						<div>
+							<span class="title">
+								時刻付きデータの探索的分析を支援する<br>
+								視覚的分析ツールの開発
+							</span><br>
+							武田 修平, 蘇 紹華, 濱田 康平<br>
+							三末 和男, 田中 二郎<br>
+							162回HCI研究会, 2015年3月
+						</div>
+						<img src="time.png" height="250px">
+					</div>
+				</div>
+			</section>
+
+			<section class="content">
+				<svg class="center">
+				</svg>
+			</section>
+
+			<section class="content">
+				<div class="center">
+					<div id="map"></div>
+					<div id="textInfo">
+						<div class="mail">takedas[a]iplab.cs.tsukuba.ac.jp</div>
+						<div class="tel">Tel : +81-29-853-5402</div>
+					</div>
+				</div>
+			</section>
+
+			<script type="text/javascript" src="main.js"></script>
+		</div>
+	</body>
+</html>
