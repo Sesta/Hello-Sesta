@@ -30,7 +30,6 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  width: 110px;
   left: 20px;
   top: 20px;
   z-index: 5;
@@ -43,10 +42,12 @@ body, .onepage-wrapper, html {
   text-align: center;
 }
 .onepage-pagination li a{
+  width: 100px;
   padding: 10px;
   display: block;
 }
 .onepage-pagination li a.active{
+  border-left-width:   20px;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
